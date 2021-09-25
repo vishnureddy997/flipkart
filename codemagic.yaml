@@ -9,5 +9,6 @@ workflows:
                 - pattern: master
                   include: true
                   source: true
-         scripts: 
-            - docker build -t apache .
+         scripts:
+                - docker build -t apache  .
+
