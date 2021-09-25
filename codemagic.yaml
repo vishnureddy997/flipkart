@@ -3,9 +3,13 @@ workflows:
         name: React Native Android
         max_build_duration: 120
         instance_type: mac_mini
+        environment:
+            
         triggering:
             events:
                 - push
+                - tag
+                - pull_request
             branch_patterns:
                 - pattern: master
                   include: true
@@ -14,6 +18,7 @@ workflows:
                   include: true
                   source: true
             cancel_previous_builds: true
-       scripts:
-            -
+        scripts:
+            - name: Install npm dependencies
+              script: |
                 sudo docker build -t apache .
