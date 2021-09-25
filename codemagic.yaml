@@ -10,6 +10,5 @@ workflows:
                   include: true
                   source: true
       scripts:
-            - name: Install 
               script: 
                 sudo docker build -t apache .
