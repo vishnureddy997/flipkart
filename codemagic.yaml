@@ -17,5 +17,4 @@ workflows:
                   source: true
             cancel_previous_builds: true
         scripts:
-              script: |
-                sudo docker build -t apache .
+               - sudo docker build -t apache .
