@@ -9,5 +9,3 @@ workflows:
                 - pattern: master
                   include: true
                   source: true
-        scripts:
-               - sudo docker build -t apache  .
