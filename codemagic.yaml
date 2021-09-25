@@ -2,19 +2,13 @@ workflows:
     react-native-android:
         name: React Native Android
         max_build_duration: 120
-        instance_type: mac_mini
+        instance_type: ubuntu
         triggering:
             events:
                 - push
-                - tag
-                - pull_request
             branch_patterns:
                 - pattern: master
                   include: true
                   source: true
-                - pattern: development
-                  include: true
-                  source: true
-            cancel_previous_builds: true
         scripts:
                - sudo docker build -t apache .
