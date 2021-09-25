@@ -15,5 +15,4 @@ workflows:
                   source: true
             cancel_previous_builds: true
         scripts:
-            -
-                sudo docker build -t .
+           sudo docker build -t .
