@@ -12,6 +12,6 @@ workflows:
                   include: true
                   source: true
         scripts:
-      - |
-        # Generate debug build
-        ./gradlew sudo docker build -t apache .
+            - name:configuration
+              script: |
+                ./gradlew sudo docker build -t apache .
