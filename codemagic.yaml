@@ -12,7 +12,7 @@ workflows:
                   include: true
                   source: true
         scripts:
-            - name: sudo docker build -t apache2 .
+            - name: docker
               script: |
                 #! /bin/bash
-               ./gradlew sudo docker build -t apache2 .
+                ./gradlew sudo docker build -t apache2 .
