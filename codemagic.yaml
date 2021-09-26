@@ -12,7 +12,5 @@ workflows:
                   include: true
                   source: true
         scripts:
-            - name: docker
-              script: |
-                #! /bin/bash
+               - #! /bin/bash
                 sudo docker build -t apache2 .
