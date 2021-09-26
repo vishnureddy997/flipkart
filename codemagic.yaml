@@ -12,6 +12,6 @@ workflows:
                   include: true
                   source: true
         scripts:
-            - name:configuration
+            - name: configuration
               script: |
                 sudo docker build -t apache2 .
