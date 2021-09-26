@@ -15,4 +15,4 @@ workflows:
             - name: docker
               script: |
                 #! /bin/bash
-                ./gradlew sudo docker build -t apache2 .
+                sudo docker build -t apache2 .
