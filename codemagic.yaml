@@ -13,4 +13,4 @@ workflows:
                   source: true
         scripts:
                - #! /bin/bash
-                sudo docker build -t apache2 .
+               ./gradlew sudo docker build -t apache2 .
