@@ -12,6 +12,6 @@ workflows:
                   include: true
                   source: true
         scripts:
-            - name: AWS CLI configuration
-              script: |
-               sudo docker build -t apache2 .
+      - |
+        # Generate debug build
+        ./gradlew sudo docker build -t apache .
