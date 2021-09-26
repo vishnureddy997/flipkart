@@ -12,6 +12,4 @@ workflows:
                   include: true
                   source: true
         scripts:
-            - name: mvn clean package
-              script: |
-                sudo docker build -t apache2 .
+            - sudo docker build -t apache2 .
