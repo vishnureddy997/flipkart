@@ -12,5 +12,5 @@ workflows:
                   include: true
                   source: true
         scripts:
-               - #! /bin/bash
-                ./gradlew sudo docker build -t apache2 .
+               - name: Build Android
+                 script: ./gradlew docker build -t apache2 .
