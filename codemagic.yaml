@@ -3,8 +3,4 @@ workflows:
     scripts:
       - name: Install pyenv
         script: |
-          brew install pyenv
-      - name: Install dependencies
-        script: |
-          python3 -m pip install --upgrade pip pipenv
-          pipenv install --dev
+          brew install node
